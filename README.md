@@ -1,136 +1,117 @@
-🧠 Feedforward Neural Network (FNN) Implementation
-📌 Project Overview
+Feedforward Neural Network (FNN) – From Implementation to Training
+Overview
 
-This project demonstrates the design, implementation, and training of a Feedforward Neural Network (FNN) using Python. The goal is to understand the core concepts of neural networks, including forward propagation, loss computation, and parameter optimization, through a hands-on implementation.
+This project focuses on building and training a Feedforward Neural Network (FNN) to better understand how neural networks learn from data. Rather than treating the network as a black box, the work emphasizes the underlying mechanics of forward propagation, loss computation, and parameter updates during training.
 
-This work serves as a foundational deep learning exercise and provides insight into how neural networks learn from data.
+The notebook serves as a practical exploration of core deep learning concepts and is intended to strengthen foundational knowledge required for more advanced neural network architectures.
 
-🎯 Objectives
+Problem Statement
 
-Understand the architecture of a Feedforward Neural Network
+Neural networks are widely used for prediction and classification tasks, but understanding how they function internally is critical for building reliable models. This project addresses the question:
 
-Implement an FNN for supervised learning tasks
+How does a simple feedforward neural network learn from data, and how do its parameters evolve during training?
 
-Explore activation functions and loss functions
+Approach
+Data Handling
 
-Train the network using gradient-based optimization
+Input features and target labels are prepared and structured for supervised learning.
 
-Evaluate model performance and learning behavior
+Data is passed through the network in batches during training to improve learning stability.
 
-🧠 What is an FNN?
+Network Design
 
-A Feedforward Neural Network (FNN) is the simplest type of neural network where information flows in one direction—from input to output—without feedback loops. It is commonly used for classification and regression problems, especially with tabular data.
+A fully connected feedforward architecture is used.
 
-🛠️ Tools & Technologies
+Hidden layers apply non-linear activation functions to capture complex relationships.
 
-Programming Language: Python
+The output layer produces predictions based on the learned representations.
 
-Libraries:
+Training Process
 
-NumPy – numerical computation
+Forward propagation computes predictions from inputs.
 
-PyTorch / or custom implementation (as applicable)
+A loss function measures the difference between predictions and true values.
 
-Matplotlib – visualization
+Backpropagation calculates gradients of the loss with respect to network parameters.
 
-Environment: Jupyter Notebook / VS Code
+Parameters are updated iteratively using a gradient-based optimizer.
 
-🔍 Methodology
-1. Data Preparation
+Evaluation
 
-Input data is structured and formatted for network training
+Model performance is monitored across training epochs.
 
-Features and labels are separated appropriately
+Changes in loss values are used to assess learning progress and convergence behavior.
 
-2. Network Architecture
+Key Concepts Demonstrated
 
-Fully connected layers
+Feedforward neural network architecture
 
-Non-linear activation functions
+Forward and backward propagation
 
-Output layer configured for prediction
+Loss functions and optimization
 
-3. Training Process
+Learning rate effects on convergence
 
-Forward propagation to compute predictions
+Difference between parameters and hyperparameters
 
-Loss calculation to measure error
+Model generalization vs overfitting
 
-Backpropagation to compute gradients
+Results and Observations
 
-Weight updates using an optimizer
+The network successfully learns patterns in the data as training progresses.
 
-4. Evaluation
+A steady decrease in loss indicates effective learning.
 
-Model performance assessed on unseen data
+Model performance is sensitive to hyperparameter choices such as learning rate and network depth.
 
-Learning behavior observed across epochs
+Even simple architectures can perform well when properly trained and tuned.
 
-📊 Key Concepts Demonstrated
+Tools and Environment
 
-Forward propagation
+Language: Python
 
-Backpropagation
+Libraries: NumPy, Matplotlib, PyTorch (or custom neural network logic as implemented)
 
-Loss minimization
+Development Environment: Jupyter Notebook / VS Code
 
-Learning rate impact
-
-Overfitting vs generalization
-
-Parameters vs hyperparameters
-
-📈 Results & Observations
-
-The model successfully learns patterns from the input data
-
-Loss decreases over training iterations, indicating learning
-
-Performance depends on network depth, learning rate, and activation choice
-
-🚀 How to Run This Project
+How to Run the Project
 
 Clone the repository:
 
 git clone https://github.com/your-username/fnn-lab.git
 
 
-Navigate to the project directory
-
-Install required libraries:
+Install required dependencies:
 
 pip install numpy matplotlib torch
 
 
-Open the notebook:
+Open and run the notebook:
 
 jupyter notebook FNN_Lab.ipynb
 
+What I Learned
 
-Run all cells sequentially
+How neural networks update weights through gradient descent
 
-📌 Future Improvements
+Why activation functions are essential for learning non-linear relationships
 
-Add validation and test datasets
+How training dynamics change with different hyperparameter choices
 
-Experiment with different activation functions
+The importance of evaluating learning behavior, not just final accuracy
 
-Implement regularization techniques
+Possible Extensions
 
-Extend to deeper networks
+Adding a validation dataset for better generalization assessment
 
-Compare FNN performance with CNNs or other models
+Comparing different activation functions and optimizers
 
-👤 Author
+Extending the network to multiple hidden layers
+
+Applying the same architecture to a real-world dataset
+
+Author
 
 Chinenye Onyedika
-Data Analyst | Machine Learning & Deep Learning Enthusiast
-📍 Windsor, Ontario, Canada
-🔗 GitHub | LinkedIn
-
-⭐ Why This Project Matters
-
-This project demonstrates:
-✔ Strong understanding of deep learning fundamentals
-✔ Ability to implement neural networks from scratch or using frameworks
-✔ Readiness for advanced ML/DL concepts
+Data Analytics Graduate | Machine Learning & Deep Learning Enthusiast
+Windsor, Ontario, Canada
