@@ -78,7 +78,7 @@ How to Run the Project
 
 Clone the repository:
 
-git clone https://github.com/your-username/fnn-lab.git
+git clone https://github.com/Joyerics/Fully-Connected-Neural-Network.git
 
 
 Install required dependencies:
